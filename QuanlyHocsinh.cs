@@ -57,6 +57,7 @@ class Program
     static void PrintClassInfo(StudentClass[] list)
     {
         Console.WriteLine("---CLASS INFORMATION---");
+        Console.WriteLine("Name \t Score");
         foreach (StudentClass item in list)
         {
             PrintStudentInfo(item);
@@ -71,7 +72,7 @@ class Program
 
         for (int i = 0; i < numOfStudent; i++)
         {
-            Console.WriteLine($"---INFORMATION FOR STUDENT #{i}---");
+            Console.WriteLine($"---INFORMATION FOR STUDENT #{i+1}---");
             list[i].InputStudentInfo();
             Console.WriteLine();
         }
